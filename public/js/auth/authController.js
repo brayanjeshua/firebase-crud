@@ -1,17 +1,17 @@
 $(() => {
-  const auth = new Autenticacion()
+  const objAuth = new Autenticacion()
 
   $('#btnRegistroEmail').click(() => {
     const nombres = $('#nombreContactoReg').val()
     const email = $('#emailContactoReg').val()
     const password = $('#passwordReg').val()
-    auth.crearCuentaEmailPass(email, password, nombres)
+    objAuth.crearCuentaEmailPass(email, password, nombres)
   })
 
   $('#btnInicioEmail').click(() => {
     const email = $('#emailSesion').val()
     const password = $('#passwordSesion').val()
-    auth.autEmailPass(email, password)
+    objAuth.autEmailPass(email, password)
   })
 
   $('#authGoogle').click(() => objAuth.authCuentaGoogle())
