@@ -13,3 +13,9 @@ const varConfig = {
     appId: "1:8743532405884:web:0b418esadasd7a5c8179"
   };
 ```
+- Iniciar proyecto simplemente con
+```
+npm install
+
+npm start
+```
