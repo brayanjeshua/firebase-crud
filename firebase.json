@@ -13,10 +13,21 @@
         "type" : 301
       }
     ],
-    "rewrites":[
+    "rewrites" : [
       {
         "source": "/**",
         "destination": "/index.html"
+      }
+    ],
+    "headers" : [
+      {
+        "source": "**/*.@(jpg|jpeg|png|gif)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=7200"
+          }
+        ]
       }
     ]
   }
