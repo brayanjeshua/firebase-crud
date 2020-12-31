@@ -19,7 +19,7 @@ $(() => {
 
   // Registrar credenciales web
   messaging.usePublicVapidKey(
-    'BNXFobbKFCs-uAVxoPSqtgtm9GrVypZwx9n2PdS6GCqynO48xgPL0vUhX5hd9xgawFTRFzvfyYe0tt8f_IcL_-w'
+    'BID1mRpNx4uzdxLgQc_sBWGcPv9tWjN9d2jkmAQu1cXqwwedFjwhSZaAkRPV36Uol8sDX3hYcArJE6ohC5Zl4xo'
   )
 
   // Solicitar permisos para las notificaciones
