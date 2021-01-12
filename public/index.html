@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--build:css css/styles.min.css -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -19,24 +20,28 @@
 </head>
 
 <body>
-    <header class="headerppal">
-        <figure class="header-logotipo">
-            <!-- <img src="imagenes/logo.png" alt="Blog Logotipo"> -->
-        </figure>
-        <h2 class="titulo">Firebase Crud</h2>
-        <!-- <h3 class="titulo-a">Encuentra los Videos mas poderosos de los geeks</h2> -->
-            <a id="btnInicioSesion" class="modal-trigger waves-effect waves-light btn btnPpal">Iniciar Sesión</a>
-            <figure class="header-avatar">
-                <img id="avatar" src="imagenes/usuario.png" alt="Avatar">
-            </figure>
-    </header>
-    <nav class="menu">
-        <ul>
+
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo"><img src="https://assetsnffrgf-a.akamaihd.net/assets/ct/0d8540a603/images/icon_homeButton.png" width="65px" alt=""></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
             <li><a id="btnTodoPost">Todos los Posts</a></li>
             <li><a id="btnMisPost">Mis Posts</a></li>
             <li><a id="btnModalPost">Realiza un Post</a></li>
-        </ul>
+            <li><a id="btnInicioSesion" class="modal-trigger waves-effect waves-light btn btnPpal">Iniciar Sesion</a></li>
+          </ul>
+        </div>
     </nav>
+    
+    <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Sass</a></li>
+    <li><a href="badges.html">Components</a></li>
+    <li><a href="collapsible.html">Javascript</a></li>
+    <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+
+
     <h4 id="tituloPost" class="titulo-posts">Posts de la Comunidad</h4>
     <section class="posts" id="posts">        
     </section>
@@ -165,7 +170,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- Compiled and minified JavaScript -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+
 
 <!-- Firebase App is always required and must be first -->
 <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-app.js"></script>
